@@ -1,0 +1,100 @@
+body {
+  font-family: serif;
+  background-color: #333;
+  color: #fff;
+}
+
+.container {
+  margin: 50px 10px;
+  text-align: center;
+}
+
+.btn {
+  padding: 10px;
+  font-size: 1.2em;
+  color: #fff;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.quote:not(:last-child) {
+  margin-bottom: 2rem;
+}
+
+.quote__text,
+.quote__author {
+  margin: 0.6em 0;
+}
+
+.quote__text {
+  font-size: 1.3em;
+  font-style: italic;
+}
+.quote__author {
+  font-size: 1.2em;
+  font-weight: bold;
+}
+
+.quote__btn {
+  background-color: #007bff;
+}
+
+.quote__btn:hover {
+  background-color: #0056b3;
+}
+
+.quote__star {
+  cursor: pointer;
+  color: gold;
+  font-size: 2.4em;
+  vertical-align: middle;
+}
+
+.favorite-quotes {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.favorite-quotes__card {
+  display: flex;
+  flex-direction: column;
+  min-width: 260px;
+  background-color: #f9f9f9;
+  color: #333;
+  padding: 10px 15px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 25%;
+}
+
+.favorite-quotes__card p:nth-child(1) {
+  height: 100%;
+}
+
+.favorite-quotes__text {
+  font-size: 1.2em;
+  font-style: italic;
+  margin: 0.5em 0;
+}
+
+.favorite-quotes__author {
+  font-size: 1.4em;
+  font-weight: bold;
+  margin: 0.5em 0 1em 0;
+}
+
+.favorite-quotes__btn {
+  background-color: transparent;
+  color: #ff0000;
+  border: 2px solid #ff0000;
+  align-self: center;
+}
+.favorite-quotes__btn:hover {
+  background-color: lightcoral;
+  color: white;
+  border: 2px solid lightcoral;
+  transition: 0.3s all;
+}
