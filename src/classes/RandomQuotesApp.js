@@ -1,5 +1,4 @@
 import RandomQuote from './RandomQuote.js';
-
 class RandomQuotesApp {
   constructor() {
     this.quoteTextElement = document.getElementById('quote-text');
@@ -11,10 +10,8 @@ class RandomQuotesApp {
   }
 
   displayCurrentQuote() {
-    const { text, author } = this.currentQuote;
-
-    this.quoteTextElement.textContent = `"${text}"`;
-    this.qouteAuthorElement.textContent = author;
+    this.quoteTextElement.textContent = this.currentQuote.formatText();
+    this.qouteAuthorElement.textContent = this.currentQuote.setCopy();
   }
 
   getRandomQuote() {
