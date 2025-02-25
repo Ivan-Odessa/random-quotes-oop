@@ -18,6 +18,10 @@ body {
   cursor: pointer;
 }
 
+.btn:not(:last-child) {
+  margin-right: 1rem;
+}
+
 .quote:not(:last-child) {
   margin-bottom: 2rem;
 }
@@ -42,6 +46,14 @@ body {
 
 .quote__btn:hover {
   background-color: #0056b3;
+}
+
+.quote__btn-api {
+  background-color: #28a745;
+}
+
+.quote__btn-api:hover {
+  background-color: #1e7e34;
 }
 
 .quote__star {
