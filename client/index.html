@@ -16,19 +16,30 @@
   <body>
     <div class="container">
       <div id="quote" class="quote">
-        <h1>Random Quotes</h1>
-        <p id="quote-text" class="quote__text">
-          Here will be one of the famous quotes from the popular author
-        </p>
-        <p id="quote-author" class="quote__author">Click the button</p>
-        <button id="random-quote-btn" class="btn quote__btn">
-          Choose random quote
-          <i class="fas fa-random"></i>
-        </button>
-        <button id="random-quote-api-btn" class="btn quote__btn-api">
-          Get random quote via API
-          <i class="fa fa-globe"></i>
-        </button>
+        <h1 class="quote__title">Random Quotes</h1>
+        <div class="quotes__content">
+          <p id="quote-text" class="quote__text">
+            Here will be one of the famous quotes from the popular author
+          </p>
+          <p id="quote-author" class="quote__author">Click the button</p>
+        </div>
+        <div class="quote__btns">
+          <button id="random-quote-btn" class="btn quote__btn">
+            Choose random quote
+            <i class="fas fa-random"></i>
+          </button>
+          <button
+            id="random-quote-public-api-btn"
+            class="btn quote__btn-public-api"
+          >
+            Get random quote via public API
+            <i class="fa fa-globe"></i>
+          </button>
+          <button id="random-quote-own-api-btn" class="btn quote__btn-own-api">
+            Get random quote via own API
+            <i class="fa fa-server"></i>
+          </button>
+        </div>
       </div>
     </div>
     <script src="index.js" type="module"></script>

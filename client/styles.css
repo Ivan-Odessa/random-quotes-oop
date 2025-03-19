@@ -1,3 +1,8 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
 body {
   font-family: serif;
   background-color: #333;
@@ -5,7 +10,7 @@ body {
 }
 
 .container {
-  margin: 50px 10px;
+  margin: 3em 0.6em;
   text-align: center;
 }
 
@@ -18,26 +23,34 @@ body {
   cursor: pointer;
 }
 
-.btn:not(:last-child) {
-  margin-right: 1rem;
+@media (max-width: 425px) {
+  .btn {
+    width: 100%;
+  }
 }
 
-.quote:not(:last-child) {
-  margin-bottom: 2rem;
+.quote__title {
+  margin-bottom: 0.7em;
 }
 
-.quote__text,
-.quote__author {
-  margin: 0.6em 0;
+.quotes__content {
+  margin-bottom: 1em;
 }
 
 .quote__text {
+  margin-bottom: 0.7em;
   font-size: 1.3em;
   font-style: italic;
 }
 .quote__author {
   font-size: 1.2em;
   font-weight: bold;
+}
+.quote__btns {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 1rem;
 }
 
 .quote__btn {
@@ -48,12 +61,20 @@ body {
   background-color: #0056b3;
 }
 
-.quote__btn-api {
+.quote__btn-public-api {
   background-color: #28a745;
 }
 
-.quote__btn-api:hover {
+.quote__btn-public-api:hover {
   background-color: #1e7e34;
+}
+
+.quote__btn-own-api {
+  background-color: #48c5ff;
+}
+
+.quote__btn-own-api:hover {
+  background-color: #0787c2;
 }
 
 .quote__star {
