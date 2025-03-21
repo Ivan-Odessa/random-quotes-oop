@@ -35,8 +35,8 @@ class RandomQuotesApp {
   async handleRandomQuoteViaAPI(apiIsOwn = false) {
     this.changeCurrentQuote(
       apiIsOwn
-        ? await RandomQuote.getRandomQuoteViaPublicAPI()
-        : await RandomQuote.getRandomQuoteViaOwnAPI()
+        ? await RandomQuote.getRandomQuoteViaOwnAPI()
+        : await RandomQuote.getRandomQuoteViaPublicAPI()
     );
   }
 
