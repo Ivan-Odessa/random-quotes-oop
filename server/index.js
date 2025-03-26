@@ -24,4 +24,3 @@ app.get('/quotes/random-single', (req, res) => {
 app.listen(PORT, () => {
   console.log(`Quotes API service is running on port ${PORT}`);
 });
-2;
