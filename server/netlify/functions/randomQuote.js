@@ -1,6 +1,6 @@
 const quotes = require('../../data/quotes');
 
-exports.handler = async function (event, context) {
+exports.handler = async function () {
   const randomIndex = Math.floor(Math.random() * quotes.length);
   const randomQuote = quotes[randomIndex];
 
