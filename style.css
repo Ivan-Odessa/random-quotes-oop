@@ -1,0 +1,93 @@
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #333;
+  color: white;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+.quotes {
+  max-width: 600px;
+  margin: 50px auto;
+  text-align: center;
+}
+
+.quotes__title {
+  font-size: 2.5em;
+}
+
+.quotes__container {
+  font-size: 1.3em;
+}
+
+.quotes__text {
+  min-height: 2.4em;
+  font-style: italic;
+}
+
+.quotes__text::before,
+.quotes__text::after {
+  content: '"';
+}
+
+.quotes__author {
+  font-weight: bold;
+}
+
+.quotes__btn {
+  padding: 10px 20px;
+  font-size: 16px;
+  border-radius: 10px;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+}
+
+.quotes__btn--primary {
+  background-color: #0056b3;
+}
+
+.quotes__btn--primary:hover {
+  background-color: #007bff;
+}
+
+.quotes__btn--favorite {
+  font-size: 30px;
+  color: #ffcc00;
+  margin-left: 10px;
+  cursor: pointer;
+  vertical-align: middle;
+}
+
+.quotes__favorite-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.favorite-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  color: #333;
+  background-color: #f9f9f9;
+  padding: 10px;
+  margin: 10px;
+  border-radius: 10px;
+  width: 250px;
+}
+
+.favorite-card__btn--delete {
+  background-color: transparent;
+  border: 2px solid #ff0000;
+  color: #ff0000;
+  transition: 0.3s all;
+}
+
+.favorite-card__btn--delete:hover {
+  background-color: #ff0000;
+  color: #fff;
+}
