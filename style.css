@@ -28,11 +28,6 @@ ul {
   font-style: italic;
 }
 
-.quotes__text::before,
-.quotes__text::after {
-  content: '"';
-}
-
 .quotes__author {
   font-weight: bold;
 }
