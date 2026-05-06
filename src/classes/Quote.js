@@ -4,6 +4,7 @@ class Quote {
     this.text = text;
     this.author = author;
   }
+
   formatText() {
     return `"${this.text}"`;
   }

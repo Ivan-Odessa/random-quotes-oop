@@ -49,6 +49,14 @@ ul {
   background-color: #007bff;
 }
 
+.quotes__btn--secondary {
+  background-color: #218838;
+}
+
+.quotes__btn--secondary:hover {
+  background-color: #28a745;
+}
+
 .quotes__btn--favorite {
   font-size: 30px;
   color: #ffcc00;

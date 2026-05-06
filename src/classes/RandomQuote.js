@@ -4,9 +4,25 @@ import Quote from './Quote.js';
 
 class RandomQuote {
   static getRandomQuote() {
-    const randomIndex =  MathUtils.generateRandomInt(quotes.length);
+    const randomIndex = MathUtils.generateRandomInt(quotes.length);
     const { id, text, author } = quotes[randomIndex];
     return new Quote(id, text, author);
+  }
+
+  static getRandomQuoteFromApi() {
+    const url = 'https://dummyjson.com/quotes/random';
+    const options = {
+      headers: {
+        'Content-Type': 'application/json',
+      },
+    };
+    return fetch(url, options)
+      .then((response) => response.json())
+      .then((data) => {
+        const { id, quote, author } = data;
+        return new Quote(id, quote, author);
+      })
+      .catch((error) => console.log(error));
   }
 }
 
