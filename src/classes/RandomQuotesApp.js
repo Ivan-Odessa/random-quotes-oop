@@ -24,19 +24,19 @@ class RandomQuotesApp {
     }
   }
 
-  getRandomQuote() {
+  randomQuoteHandler() {
     this.changeCurrentQuote(RandomQuote.getRandomQuote());
   }
 
-  async getRandomApiQuote() {
+  async randomApiQuoteHandler() {
     const randomQuoteViaApi = await RandomQuote.getRandomQuoteViaApi();
     this.changeCurrentQuote(randomQuoteViaApi);
   }
 
   init() {
-    this.getQuoteBtn.addEventListener('click', () => this.getRandomQuote());
+    this.getQuoteBtn.addEventListener('click', () => this.randomQuoteHandler());
     this.getApiQuoteBtn.addEventListener('click', () =>
-      this.getRandomApiQuote(),
+      this.randomApiQuoteHandler(),
     );
   }
 }
