@@ -41,6 +41,10 @@ ul {
   cursor: pointer;
 }
 
+.quotes__btn:hover {
+  transition: all 0.5s ease;
+}
+
 .quotes__btn--primary {
   background-color: #0056b3;
 }
